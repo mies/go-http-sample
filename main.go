@@ -9,7 +9,7 @@ import "github.com/gorilla/mux"
 
 func router() *mux.Router {
 	router := mux.NewRouter()
-	router.HandleFunc("/home", IndexHandler).Methods("GET")
+	router.HandleFunc("/", IndexHandler).Methods("GET")
 	return router
 }
 
